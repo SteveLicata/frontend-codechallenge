@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 4 CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link <link href="https://fonts.googleapis.com/css?family=Prompt|Quattrocento+Sans" rel="stylesheet">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <title>1-800-flowers Code Challenge</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="page-header">
+      <h1 class="pageheadertext">
+        1-800-flowers.com <small>code challenge</small>
+      </h1>
+    </div>
+
+
+    <!-- MOBILE-FRIENDLY SIDEBAR -->
+    <div id="mySidenav" class="sidenav">
+      <a id="closingx" href="javascript:void(0)" class="closebtn">&times;</a>
+      <p class="sidenavtext">
+        <a href="index.html">
+          Home
+        </a>
+      </p>
+      <p class="sidenavtext">
+        <a href="index.html">
+          About
+        </a>
+      </p>
+      <p class="sidenavtext">
+        <a href="index.html">
+          Contact
+        </a>
+      </p>
+    </div>
+
+    <div id="main">
+      <span id="hamburger" style="font-size:30px;cursor:pointer" >&#9776;</span>
+    </div>
+
+    <br>
+
+    <!-- bootstrap container -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <h5 class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h5>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+
+      <h5 class="prompt">
+        Please fill out the contact form!
+      </h5>
+
+      <br>
+
+      <!-- Bootstrap Grid Container Begins here -->
+      <div class="container">
+
+        <form method="post" name="form" class="bigform" onsubmit="return formValidation();">
+          <!-- NAME -->
+          <label for="name">
+            <p>
+              *Name:
+            </p>
+          </label>
+            <br>
+          <input id="inputname" type="text" name="name" size="25" required>
+            <br><br>
+          <!-- PHONE -->
+          <label for="phone">
+            <p>
+              Phone Number:
+            </p>
+          </label>
+            <br>
+          <input id="inputnum" type="text" name="phone" size="11">
+            <br><br>
+          <!-- EMAIL -->
+          <label for="email">
+            <p>
+              *Email Address:
+            </p>
+          </label>
+            <br>
+          <input id="inputemail" type="text" name="email" size="25" required>
+            <br><br>
+          <!-- SUBJECT -->
+          <label for="emailsubject">
+            <p>
+              Subject:
+            </p>
+          </label>
+            <br>
+          <input id="inputsubject" type="text" name="emailsubject" size="25">
+            <br><br>
+          <!-- MESSAGE -->
+          <label for="emailcontent">
+            <p>
+              Message:
+            </p>
+          </label>
+            <br>
+          <textarea id="inputmessage" name="emailcontent" rows="4" cols="20" size="200"></textarea>
+            <br>
+          <!-- SUBMIT -->
+          <button id="button" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+          <h6 class="prompt">*Required Fields</h6>
+        </form>
+      </div>
+
+    </div>
+    <!-- end bootstrap container -->
+
+    <br>
+
+    <!-- FOOTER -->
+    <div class="card">
+      <div class="card-body bg-dark">
+        <blockquote class="blockquote mb-0">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              <center><p class=footertext>
+                Copyright 2018 | 1-800-flowers.com Code Challenge
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              <center><p class=footertext>
+                Code Challenge by <a href="https://stevelicata.github.io/WebDevPortfolio/" target="_blank" >
+                Steve Licata
+                </a>
+              </p>
+            </div>
+          </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+
+    <!-- jQuery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <!-- My Javascript File -->
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

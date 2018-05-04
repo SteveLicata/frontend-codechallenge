@@ -1,0 +1,101 @@
+/* MOBILE Layout */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+        .bigform, .prompt {
+          text-align: center;
+        }
+        .page-header, .card, .confirm {
+          text-align: center;
+        }
+      }
+
+/* TABLET layout */
+@media screen and (min-width: 480px) and (max-width: 1024px){
+        .bigform, .prompt {
+          text-align: right;
+        }
+        .page-header, .card, .confirm {
+          text-align: center;
+        }
+      }
+/* DESKTOP layout*/
+@media only screen and (min-width: 1024px) {
+        .bigform, .prompt {
+          text-align: left;
+        }
+        .page-header, .card, .confirm {
+          text-align: center;
+        }
+      }
+
+
+body {
+  background-color: #448AFF;
+}
+
+.page-header {
+  background-color: #333A40;
+  padding-bottom: 25px;
+}
+
+.pageheadertext {
+  color: lightgray;
+  padding-top: 15px;
+}
+
+.lorem {
+  text-align: center;
+}
+
+.footertext {
+  color: lightgray;
+}
+
+a, .footertext {
+  color: lightgray;
+}
+
+
+/* Google Fonts  */
+h1, .footertext, .sidenavtext {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
+
+
+/* SIDENAV STYLES */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+  }
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
